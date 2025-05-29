@@ -1,0 +1,331 @@
+@font-face {
+    font-family: jost;
+    src: url(../fonts/Jost-ExtraLight.ttf) format('opentype')
+}
+@font-face {
+    font-family: jost-regular;
+    src: url(../fonts/Jost-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-image: url(../img/background.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+#elements{
+    display: flex;
+    justify-content: space-between;
+}
+
+#menu{
+    display: none;
+    position: absolute;
+}
+
+nav ul{
+    display: none;
+    float: left;
+}
+
+nav ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3vh;
+}
+
+ul h2{
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-family: "Jost";
+    color: #000;
+    display: flex;
+}
+
+nav img{
+    height: 7vh;
+    margin-top: 1.5vh;
+    margin-left: 6%;
+    cursor: pointer;
+}
+#menu:checked+label+ul {
+    display: block;
+    position: absolute;
+    background-color: #F6F6F6;
+    height: 100vh;
+}
+
+#menu:checked+label{
+    display: flex;
+}
+
+.linha-divisoria{
+    width: 90%;
+    border-top: 1px solid #000;
+    transform: scaleY(0.1);
+    margin-left: 5%;
+}
+
+#logoheader{
+    height: 10vh;
+}
+#midias{
+    display: flex;
+    width: fit-content;
+    margin-top: 1.5vh;
+    margin-right: 6%;
+}
+#whatsapp{
+    width: 25px;
+}
+#whatsapp img{
+    margin-left: 18%;
+}
+#instagram{
+    width: 23px;
+    margin-top: 1%;
+    margin-left: 14%;
+}
+#fix{
+    height: 10vh;
+}
+section{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#art1{
+    margin-top: 3.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#art1 h1{
+    font-family: "Jost";
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: normal;
+}
+#art1 h2{
+    font-family: "Jost";
+    width: 90%;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: normal;
+}
+#img_home{
+    width: 90%;
+    height: 31vh;
+    display: flex;
+    margin-top: 4vh;
+}
+#art1 img{
+    width: 60.4%;
+    height: fit-content;
+}
+#imagens{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+#imagens #img1{
+    width: 108%;
+    height: fit-content;
+}
+#imagens #img2{
+    width: 110%;
+    height: fit-content;
+    margin-top: 1.8vh;
+}
+#art2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#catalogo{
+    font-size: 1.8em;
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 6vh;
+}
+#datas_comemorativas,#sublimacao, #encadernacao{
+    width: 80%;
+    background-color: #F5F5F5;
+}
+#sublimacao, #encadernacao{
+    margin-top: 6vh;
+}
+#datas_comemorativas img{
+    width: 100%;
+}
+#sublimacao img{
+    width: 100%;
+}
+#encadernacao img{
+    width: 100%;
+}
+#art2 h1, p, button{
+    font-family: "Jost";
+    font-weight: normal;
+}
+.titulos_catalogo{
+    font-size: 1.5em;
+    margin-left: 3%;
+}
+.informacoes{
+    width: 85%;
+    margin-left: 8%;
+    font-size: 0.8em;
+}
+.button{
+    background-color: #E4E4E4;
+    border: none;
+    font-size: 1.1em;
+    padding: 1px 5px;
+    margin-bottom: 2vh;
+    margin-left: 3%;
+    margin-top: 2vh;
+}
+footer{
+    width: 100%;
+    height: 18vh;
+    margin-top: 6vh;
+}
+#border{
+    width: 90%;
+    border-top: 1px solid #000;
+    transform: scaleY(0.5);
+    margin-left: 5%;
+}
+#container{
+    font-family: "jost";
+    display: flex;
+    justify-content: space-between;
+}
+.font{
+    font-weight: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+}
+
+#align{
+    width: fit-content;
+    margin-top: 1vh;
+    margin-left: 2%;
+}
+
+#nome{
+    display: flex;
+    justify-content: left;
+    height: 5vh;
+    font-size: 2em;
+}
+
+#horario{
+    display: flex;
+    justify-content: left;
+    font-size: 0.9em;
+}
+
+#inf2{
+    width: 100%;
+    margin-top: 2.8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+#cnpj{  
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: 0.6em;
+}
+
+#direitos{
+    display: flex;
+    justify-content: left;
+    width: 100%;
+    font-size: 0.6em;
+}
+
+#align2{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 9%;
+}
+
+#midiasfooter{
+    display: flex;
+    height: 3.6vh;
+    width: fit-content;
+    margin-left: 45%;
+    margin-top: 1.5vh;
+}
+
+#whatsappfooter{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+
+#instagramfooter{
+    display: flex;
+    justify-content: center;
+    height: 2.8vh;
+    margin-left: 23%;
+}
+#pagamentos{
+    margin-top: 0.5vh;
+    display: flex;
+}
+#pix{
+    margin-top: 0.4vh;
+    height: 2vh;
+}
+#cartao{
+    height: 2.6vh;
+    margin-left: 16%;
+}
+#dinheiro{
+    height: 2.6vh;
+    margin-left: 16%;
+}
+@media (min-width: 375px){
+    #datas_comemorativas,#sublimacao, #encadernacao{
+    width: 70%;
+}
+}
